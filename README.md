@@ -1,5 +1,12 @@
 ## OpenEmbedded / Yocto software layer for RetroArch and libretro cores
 
+
+This allows Retroarch to launch to the wayland display
+
+```console
+export WAYLAND_DISPLAY=/run/wayland-0
+```
+
 This layer provides RetroArch front-end and libretro cores emulators
 recipes for use with OpenEmbedded and/or Yocto.
 
@@ -29,7 +36,7 @@ Recomendation: [retro-image-full](recipes-core/images/retro-image-full.bb)
 ## Tested platforms
 
 | Machine           | Layer                                                                            | Build against | Runtime testing | Notice                                                                     |
-|:------------------|:--------------------------------------------------------------------------------:|:-------------:|:---------------:|:---------------------------------------------------------------------------| 
+|:------------------|:--------------------------------------------------------------------------------:|:-------------:|:---------------:|:---------------------------------------------------------------------------|
 | `cubietruck`      | [meta-sunxi](https://github.com/linux-sunxi/meta-sunxi)                          |  Often        | Rarely          | Unable to run kms with lima(mesa)                                          |
 | `intel-core2-32`  | [meta-intel](https://git.yoctoproject.org/cgit/cgit.cgi/meta-intel/)             |  Often        | Sometimes       | As pendrive dongle                                                         |
 | `intel-corei7-64` | [meta-intel](https://git.yoctoproject.org/cgit/cgit.cgi/meta-intel/)             |  Often        | Sometimes       | As pendrive dongle                                                         |
